@@ -1,0 +1,199 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+.table-grid {
+  margin-left: 20%;
+    display: grid;
+    grid-template-columns: repeat(5, 150px);
+    grid-template-rows: repeat(4, 150px);
+
+  }
+
+  @media (max-width: 768px) {
+    .table-grid {
+      margin-top: 25%;
+      margin-left: 7%;
+      display: grid;
+      grid-template-columns: repeat(2, 150px);
+      grid-template-rows: repeat(10, 150px);
+  
+    }
+  }
+  
+  .table-cell {
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    margin:10px;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  }
+  .table-cell:hover {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  }
+  
+  .available {
+    background-color: #64dd17; /* Green */
+  }
+  .confirmed{
+    background-color: #64dd17;
+  }
+  
+  .reserving {
+    background-color: #ffee58; /* Yellow */
+  }
+  .cancelled{
+    background-color: #ff1744; /* Red */
+
+  }
+  
+  .booked {
+    background-color: #ff1744; /* Red */
+  }
+  
+  .table-info {
+    position: absolute;
+    top: 5px; /* Adjust as needed */
+    left: 5px; /* Adjust as needed */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .table-duration {
+    position: absolute;
+    top: 95px; /* Adjust as needed */
+    left: 75px; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+  }
+  .table-container
+  {
+    padding-top: 6%;
+    padding-left: 5%;
+    width: 100%;
+  }
+  .table-main
+  {
+    /* border: 1px solid red; */
+   
+  /* display: flex; */
+
+  }
+  .booking-form
+  {
+    width: 30%;
+    /* background-color:#000;   */
+    margin-top: 6%;
+    max-height: 600px;
+  }
+
+  /* Table menu CSS+++++++++++++++++++++++++++++ */
+
+  .menu
+{
+    margin-top: 5%;
+    
+}
+@media (max-width: 768px) {
+  .menu
+{
+    margin-top: 25%;
+    
+}
+}
+
+/* OrderPage+++++++++++++++++++++++++++++++++++++ */
+.order-page
+{
+  margin-top: 20%;
+}
+.order-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.bill {
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+}
+
+.bill h1 {
+  margin-bottom: 10px;
+}
+
+.information {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+.booking-form form TextField{
+  width: 200px;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.booking-form form {
+  width: 100%;
+}
+
+.booking-form .MuiFormControl-root {
+  margin-bottom: 25px;
+}
+
+@media only screen and (min-width: 600px) {
+
+  .order-page {
+   
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+  .bill {
+      width: 45%;
+      margin-bottom: 0;
+  }
+
+  .information {
+      width: 45%;
+  }
+
+  .booking-form {
+      align-items: flex-start;
+  }
+}
+
+.cart-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cart-list li {
+  margin-bottom: 5px;
+}
