@@ -10,9 +10,7 @@ function About() {
                 </div>
                 <div className="content">
                     <h3 className="title">what s make our coffee special!</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel rerum laboriosam reprehenderit ipsa id
-                        repellat odio illum, voluptas, necessitatibus assumenda adipisci. Hic, maiores iste? Excepturi illo
-                        dolore mollitia qui quia.</p>
+                    <p>Our coffee stands out due to the meticulous selection of premium beans sourced from sustainable farms worldwide. Each batch is expertly roasted to perfection, unlocking rich flavors and enticing aromas that captivate the senses. We prioritize quality at every step, ensuring a delightful coffee experience with every sip.</p>
                     <a href="#" className="btn">read more</a>
                     <div className="icons-container">
                         <div className="icons">
